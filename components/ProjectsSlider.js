@@ -67,11 +67,13 @@ const ProjectsSlider = () => {
           <div className="bg-indigo-500 bg-opacity-10 h-full min-h-[340px] sm:min-h-[440px] rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89, 65, 169, 0.15)] transition-all duration-300">
             <div className="flex flex-col justify-between h-full">
               <div className="font-semibold">{item.name}</div>
-              <p className="text-xs" style={{ whiteSpace: 'pre-line' }}>
-                {item.techStack.map((icon, idx) => (
-                  <span key={idx} className="inline-block mx-1">{icon}</span> // Add key here
-                ))}
-              </p>
+                <p className="text-xs" style={{ whiteSpace: 'pre-line' }}>
+                  {item.techStack.map((icon, idx) => (
+                    <span key={idx} className="inline-block mx-1">
+                      {icon}
+                    </span>
+                  ))}
+                </p>
             </div>
           </div>
         </SwiperSlide>

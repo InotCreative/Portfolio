@@ -33,8 +33,9 @@ const Contact = () => {
       <div className='container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
         <div className='flex flex-col w-full max-w-[700px]'>
           <h2 className='h2 text-center mb-12'>
-            Let's <span className='text-accent'>Connect.</span>
+            Let&apos;s <span className='text-accent'>Connect.</span>
           </h2>
+
           <form className='flex-1 flex flex-col gap-6 w-full mx-auto' onSubmit={sendEmail}>
             <div className='flex gap-x-6 w-full'>
               <input
