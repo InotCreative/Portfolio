@@ -1,6 +1,7 @@
 import Image from "next/Image"
 import ParticlesContainer from '../components/ParticlesContainer'
 import ProjectsBtn from '../components/ProjectsBtn'
+import ResumeBtn from '../components/ResumeBtn'
 import Avatar from '../components/Avatar'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
@@ -32,9 +33,14 @@ const Home = () => {
             Driven to solve complex problems through data-driven insights and innovative approaches in secure systems. Dedicated to continuous learning and leveraging technology to create meaningful impact.
           </motion.p>
 
-          <motion.div variants={fadeIn('down', 0.4)} className='z-20'>
-            <ProjectsBtn />
-          </motion.div>
+          <div style={{ display: 'flex', gap: '20px' }} className="z-20">
+            <motion.div variants={fadeIn('down', 0.4)}>
+              <ProjectsBtn />
+            </motion.div>
+            <motion.div variants={fadeIn('down', 0.4)}>
+              <ResumeBtn />
+            </motion.div>
+          </div>
         </div>
 
         <div className="w-[1000px] h-[800px] absolute right-0 bottom-0" style={{ paddingLeft: '20px', paddingTop: '100px' }}>
