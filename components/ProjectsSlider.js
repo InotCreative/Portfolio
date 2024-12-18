@@ -68,8 +68,8 @@ const ProjectsSlider = () => {
             <div className="flex flex-col justify-between h-full">
               <div className="font-semibold">{item.name}</div>
               <p className="text-xs" style={{ whiteSpace: 'pre-line' }}>
-                {item.techStack.map((icon, index) => (
-                  <span key={index} className="inline-block mx-1">{icon}</span>
+                {item.techStack.map((icon, idx) => (
+                  <span key={idx} className="inline-block mx-1">{icon}</span> // Add key here
                 ))}
               </p>
             </div>
